@@ -1,0 +1,16 @@
+<div class="area-login-background"></div>
+
+<div class="div area-form">
+    <form>
+        <h1 class="titulo">MATÉRIAS SANTAS</h1>
+        <h2 class="subtitulo">O santíssimo site de controle de notas</h2>
+
+        {{userName}}
+        <input type="text" [(ngModel)]="userName" [ngModelOptions]="{ standalone: true}" placeholder="Digite seu nome" class="input-form">
+        <app-button textButton="Login" size="100" (click)="login()"></app-button>
+    </form>
+    <footer>
+        <p>&copy; 2024 | Desenvolvido por Miguel Martinazzo</p>
+    </footer>
+</div>
+
