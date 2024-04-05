@@ -5,7 +5,7 @@
     float: left;
     background-image: url('../../../assets/boa-noite-1931ErF2HvPsd8.jpg');
     background-color: var(--primary-color);
-    background-repeat: repeat-y;
+    background-repeat:repeat-y;
     background-size: 100% auto;
     background-position: center top;
 }
