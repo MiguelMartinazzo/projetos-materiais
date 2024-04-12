@@ -1,0 +1,120 @@
+<app-menu></app-menu>
+
+<div class="container-fluid pt-3">
+    <div class="row">
+
+        <!-- LADO ESQUERDO -->
+        <div class="col-12 col-lg-9">
+            <div class="card-info">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <h1 class="titulo">Matérias Santas</h1>
+                        <p class="subtitulo">Mais eficiencia no controle de <span>Matérias</span>
+                            e notas. Você será santificado e nunca falhará.
+                            Agora com o <span>Matérias Santas</span> você pode controlar tudo isso de
+                            forma simples e eficiênte.
+                            Confira um resumo das informações através do nosso <span>Dashboard</span>
+                        </p>
+                        <app-button textButton="Iniciar" routerLink="/login"></app-button>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img class="imageHome"
+                            src="../../../assets/kisspng-the-last-supper-gospel-of-john-painting-statue-the-last-supper-5b24cb60cc1a25.246167291529138016836.png"
+                            width="70%">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <!-- card esquerdo-->
+                    <div class="col-6">
+                        <div class="card-info">
+                            <div class="row">
+                                <div class="col-8">
+                                    <p class="texto-card">Total de Matérias</p>
+                                    <p class="numero-card">69</p>
+                                    <p class="destaque-card">+1 adicionada no ultimo mês</p>
+                                </div>
+                                <div class="col-4">
+                                    <mat-progress-spinner class="exemplo-margin" [color]="color" [mode]="mode"
+                                        [value]="value">
+                                    </mat-progress-spinner>
+                                    <p class="info-spinner">69/150</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card direita -->
+                    <div class="col-6">
+                        <div class="card-info">
+                            <div class="row">
+                                <div class="col-8">
+                                    <p class="texto-card">Total de notas</p>
+                                    <p class="numero-card">4</p>
+                                    <p class="destaque-card">+2 adicionada no ultimo mês</p>
+                                </div>
+                                <div class="col-4">
+                                    <mat-progress-spinner class="exemplo-margin" [color]="color" [mode]="mode"
+                                        [value]="noteValue">
+                                    </mat-progress-spinner>
+                                    <p class="info-spinner">4/6</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- parte de baixo-->
+                    <div class="col-12 mt-4">
+                        <div class="card-info">
+                            <h3>Ultima Matéria Cadastrada</h3>
+
+                            <hr class="hr">
+
+                            <div class="row">
+                                <div class="col-1">
+                                    <mat-icon>history_edu</mat-icon>
+                                </div>
+                                <div class="col-1">
+                                    <p class="texto-p">1</p>
+                                </div>
+                                <div class="col">
+                                    <p class="texto-p">Abençoamento Divino</p>
+                                </div>
+                                <div class="col">
+                                    <p class="texto-p">10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LADO DIREITO PROFILE -->
+        <div class="col-12 col-lg-3">
+            <div class="card-info right-side">
+                <div class="container-perfil">
+                    <img src="../../../assets/perfil.jpg" class="img-perfil">
+                    <h4>Seja Bem Vindo</h4>
+                    <h5>{{user}}</h5>
+                    <h5 class="location"><mat-icon>location_on</mat-icon>C-Paraíso</h5>
+                </div>
+
+                <hr class="hr">
+
+                <p class="texto-p">
+                    "Fear not, for I am with you; be not dismayed, for I am your God;<br> I will strengthen you, I will
+                    help
+                    you, I will uphold you with my righteous right hand."
+                </p>
+
+                <hr class="hr">
+
+                <ul>
+                    <li><mat-icon>school</mat-icon>Gerencie Milagres</li>
+                    <li><mat-icon>settings_heart</mat-icon>Adicione Reliquias</li>
+                    <li><mat-icon>settings_accessibility</mat-icon>Consulte Santos</li>
+                    <li><mat-icon>balance</mat-icon>Purificar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
